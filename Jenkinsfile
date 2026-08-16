@@ -107,10 +107,10 @@ pipeline {
             steps {
                 sh """
                     kubectl set image deployment/student-backend \
-                    backend=${DOCKER_IMAGE_BACKEND}:${IMAGE_TAG}
+                    student-backend=${DOCKER_IMAGE_BACKEND}:${IMAGE_TAG}
 
                     kubectl set image deployment/student-frontend \
-                    frontend=${DOCKER_IMAGE_FRONTEND}:${IMAGE_TAG}
+                    student-frontend=${DOCKER_IMAGE_FRONTEND}:${IMAGE_TAG}
                 """
             }
         }
