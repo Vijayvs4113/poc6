@@ -10,7 +10,7 @@ pipeline {
 
         IMAGE_TAG = "${BUILD_NUMBER}"
 
-        KUBECONFIG = '/var/jenkins_home/.kube/config'
+        KUBECONFIG = "/var/jenkins_home/.kube/config-jenkins"
     }
 
     stages {
