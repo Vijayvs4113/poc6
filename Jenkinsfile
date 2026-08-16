@@ -51,14 +51,6 @@ pipeline {
             }
         }
 
-        stage('Install Backend Dependencies') {
-            steps {
-                dir('backend') {
-                    sh 'npm install'
-                }
-            }
-        }
-
         stage('Docker Build Backend') {
             steps {
                 sh """
